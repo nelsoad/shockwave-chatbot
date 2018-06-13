@@ -5,6 +5,6 @@ module.exports = function(bot) {
             session.endDialog();
         }
     ).triggerAction({
-        matches: 'Greeting'
+        matches: 'greeting'
     });
 };
