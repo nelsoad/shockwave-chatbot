@@ -1,11 +1,11 @@
 module.exports = function(bot) {
-    bot.dialog('GreetingDialog',
+    bot.dialog('ScheduleTime3Dialog',
         (session) => {
             setTimeout('', 1000);
-            session.send('Good afternoon. How can i help you?');
+            session.send('How about Friday at 11 am?');
             session.endDialog();
         }
     ).triggerAction({
-        matches: 'Greeting'
+        matches: 'Schedule-Time-3'
     });
 };

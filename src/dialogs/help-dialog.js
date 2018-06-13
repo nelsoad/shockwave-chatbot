@@ -1,7 +1,7 @@
 module.exports = function(bot) {
     bot.dialog('HelpDialog',
         (session) => {
-            session.send('You reached the Help intent. You said \'%s\'.', session.message.text);
+            session.send('It seems like you need help. Can i help you?');
             session.endDialog();
         }
     ).triggerAction({

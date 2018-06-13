@@ -1,11 +1,11 @@
 module.exports = function(bot) {
-    bot.dialog('GreetingDialog',
+    bot.dialog('FindRepDialog',
         (session) => {
             setTimeout('', 1000);
-            session.send('Good afternoon. How can i help you?');
+            session.send('I noticed you are an existing customer. Your rep is Jerry Megatron, right?');
             session.endDialog();
         }
     ).triggerAction({
-        matches: 'Greeting'
+        matches: 'Find-Rep'
     });
 };
