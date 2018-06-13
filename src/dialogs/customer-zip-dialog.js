@@ -1,11 +1,11 @@
 module.exports = function(bot) {
-    bot.dialog('GreetingDialog',
+    bot.dialog('CustomerZipDialog',
         (session) => {
             setTimeout('', 1000);
-            session.send('Good afternoon. How can i help you?');
+            session.send('Could you please tell me your zip code');
             session.endDialog();
         }
     ).triggerAction({
-        matches: 'greeting'
-    });
+        matches: 'Customer-Zip'
+    })
 };

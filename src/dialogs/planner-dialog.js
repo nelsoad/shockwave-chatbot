@@ -1,11 +1,11 @@
 module.exports = function(bot) {
-    bot.dialog('GreetingDialog',
+    bot.dialog('PlannerDialog',
         (session) => {
             setTimeout('', 1000);
-            session.send('Good afternoon. How can i help you?');
+            session.send('Have you ever worked with a financial planner for advise');
             session.endDialog();
         }
     ).triggerAction({
-        matches: 'greeting'
-    });
+        matches: 'Planner'
+    })
 };
