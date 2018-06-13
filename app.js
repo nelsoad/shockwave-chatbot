@@ -59,7 +59,7 @@ bot.recognizer(recognizer);
 require('./src/dialogs/greeting-dialog')(bot);
 require('./src/dialogs/help-dialog')(bot);
 require('./src/dialogs/cancel-dialog')(bot);
-require('./src/dialogs/common-mistaes-dialog')(bot);
+require('./src/dialogs/common-mistakes-dialog')(bot);
 require('./src/dialogs/customer-zip-dialog')(bot);
 require('./src/dialogs/find-rep-dialog')(bot);
 require('./src/dialogs/fr-list-dialog')(bot);
