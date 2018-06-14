@@ -36,8 +36,7 @@ var tableStorage = new botbuilder_azure.AzureBotStorage({ gzipData: false }, azu
 // This default message handler is invoked if the user's utterance doesn't
 // match any intents handled by other dialogs.
 var bot = new builder.UniversalBot(connector, function (session, args) {
-   // session.send('You reached the default message handler. You said \'%s\'.', session.message.text);
-   session.send('Hi.. i dont think i will be able to help you. Let me connect you to my call center rep who can help')
+   session.send('Hi.. i dont think i will be able to help you. Let me connect you to my call center rep who can help.');
 });
 
 bot.set('storage', tableStorage);
@@ -59,7 +58,7 @@ bot.recognizer(recognizer);
 require('./src/dialogs/greeting-dialog')(bot);
 require('./src/dialogs/help-dialog')(bot);
 require('./src/dialogs/cancel-dialog')(bot);
-require('./src/dialogs/common-mistaes-dialog')(bot);
+require('./src/dialogs/common-mistakes-dialog')(bot);
 require('./src/dialogs/customer-zip-dialog')(bot);
 require('./src/dialogs/find-rep-dialog')(bot);
 require('./src/dialogs/fr-list-dialog')(bot);
@@ -73,3 +72,4 @@ require('./src/dialogs/schedule-time1-dialog')(bot);
 require('./src/dialogs/schedule-time2-dialog')(bot);
 require('./src/dialogs/schedule-time3-dialog')(bot);
 require('./src/dialogs/thankcustomer-dialog')(bot);
+require('./src/dialogs/no-time-dialog')(bot);
